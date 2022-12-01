@@ -34,3 +34,9 @@
 ```
 
 Collaboration and solution repo for the NC3 CTF - 2022.
+
+## Table of content
+
+### Web
+
+[NisseInput](web/NisseInput/)
