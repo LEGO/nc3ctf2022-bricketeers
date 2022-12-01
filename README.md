@@ -39,5 +39,5 @@ Collaboration and solution repo for the NC3 CTF - 2022.
 
 ### Web
 
-[NisseInput](web/NisseInput/README.md)
-[NisseInput2](/web/NisseInput2/README.md)
+* [NisseInput](web/NisseInput/README.md)
+* [NisseInput2](./web/NisseInput2/README.md)
