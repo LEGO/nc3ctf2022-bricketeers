@@ -18,12 +18,12 @@ Converting from hex in cyberchef yields the following string
 The assignment hints towards primenumbers.
 Knowing that the first few primes are 2,3,5 highlights that it might be about the position in the string.
 
-0 = n
-1 = c
-2 = n
-3 = c
-4 = 3
-5 = 3
+0 = n  
+1 = c  
+2 = n  
+3 = c  
+4 = 3  
+5 = 3  
 
 Gives us the start of the flag `nc3{` which is what we are looking for.
 
