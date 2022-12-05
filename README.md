@@ -43,5 +43,11 @@ Collaboration and solution repo for the NC3 CTF - 2022.
 * [NisseInput2](Web/NisseInput2/README.md)
 * [SætDig](Web/SaetDig/README.md)
 * [Nissekode](Web/Nissekode/README.md)
+* [Sidste Chance](Web/SidsteChance/README.md)
+* [KollisionsNissen](Web/Kollisionsnissen/README.md)
 
+### Forensics
 
+* [Den hemmelige besked](/forensics/den_hemmelige_besked.md)
+* [Det Kinesiske julebrev](/forensics/det_kinesiske_julebrev.md)
+* [Drillenissen](/forensics/drillenissen.md)
