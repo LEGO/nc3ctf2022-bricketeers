@@ -52,6 +52,6 @@ Collaboration and solution repo for the NC3 CTF - 2022.
 * [Det Kinesiske julebrev](/forensics/det_kinesiske_julebrev.md)
 * [Drillenissen](/forensics/drillenissen.md)
 
-### Forensics
+### Bonus
 
 * [Juledonation](/bonus/juledonation.md)
