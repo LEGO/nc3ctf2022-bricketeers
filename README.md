@@ -59,3 +59,7 @@ Collaboration and solution repo for the NC3 CTF - 2022.
 ### Bonus
 
 * [Juledonation](/bonus/juledonation.md)
+
+### Reversing
+
+* [To be xor not to be?](/reversing/ToBeXorNotToBe/README.md)
