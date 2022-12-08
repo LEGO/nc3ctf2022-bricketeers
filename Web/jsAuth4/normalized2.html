@@ -20,10 +20,6 @@
         let replaceAllStringFromCharCode0 = input => {
             return input.replaceAll(String.fromCharCode(0), '');
         };
-
-        let charCodeAt0CharAtExtreme = (input1, input2) => {
-            return charCodeAt0(input1.charAt(input2 % input1.length));
-        }
         
         let Asserter = (p1, p2, p3) => {
             return (p3 == 0) ? (p1 == p2) : ((p3 == 1) ? (p1 != p2) : !!'')
@@ -31,14 +27,6 @@
         
         let substringerDelux = (flag, value1, value2) => {
             return flag.substring(value1 * value2, value1 * value2 + value1);
-        }
-        
-        let stringFromCharCodeConjunction = (input1, input2) => {
-            return String.fromCharCode(input1 ^ input2);
-        }
-        
-        let charCodeAt0 = input => {
-            return input.charCodeAt(0);
         }
         
         let arrayOf62Magic = () => {
@@ -49,33 +37,48 @@
 
         let reduceWithIndexOfExtreme = (input1, input2) => {
             return [...input1].reduce((value1, value2) => {
-                return value1 + ((var1 = input2.indexOf(value2)) > - 1 ? input2[(var1 + input2.length / 2) % input2.length] : value2), '';
-            });
+                return value1 + ((var1 = input2.indexOf(value2)) > - 1 ? input2[(var1 + input2.length / 2) % input2.length] : value2);
+            },'');
         }
         
         let everyCharAt = (input1, input2) => {
-            return [...input1].every((value1, value2) => {
-                return value1 == input2.charAt(input1.length - value2 - 1);
-            });
-        }
-        
-        let reductionExtreme = (input1, input2) => {
-            return [...input1].reduce((value1, value2, value3) => {
-                value1 + stringFromCharCodeConjunction(charCodeAt0(value2), charCodeAt0CharAtExtreme(input2, value3)), ''
-            });
-        }
+    return [...input1].every((value1, value2) => {
+        return value1 == input2.charAt(input1.length - value2 - 1);
+    });
+}
 
-        let splitter = (input1, input2) => {
-            return input1.split(input2);
-        }
+let reductionExtreme = (input1, input2) => {
+    let array = [...input1];
+    return array.reduce((previousValue, currentValue, index) => {
+        let currentCharCode = charCodeAt0(currentValue);
+        return previousValue + stringFromCharCodeConjunction(currentCharCode, charCodeAt0CharAtExtreme(input2, index));
+    }, '');
+}
 
-        let prependCharCodeOf0 = input => { 
-            return input + String.fromCharCode(0);
-        }
+let stringFromCharCodeConjunction = (input1, input2) => {
+    return String.fromCharCode(input1 ^ input2);
+}
+
+let charCodeAt0 = input => {
+    return input.charCodeAt(0);
+}
+
+let prependCharCodeOf0 = input => { 
+    return input + String.fromCharCode(0);
+}
+
+let charCodeAt0CharAtExtreme = (input1, input2) => {
+    return charCodeAt0(input1.charAt(input2 % input1.length));
+}
+
+let splitter = (input1, input2) => {
+    return input1.split(input2);
+}
+
+let splitItReverseItJoinIt = input => {
+    return splitter(input, '').reverse().join('');
+}
         
-        let splitItReverseItJoinIt = input => {
-            return splitter(input, '').reverse().join('');
-        }
         
         let asciiSum = input => {
             return [...input].reduce( (value1, value2) => {
@@ -236,25 +239,25 @@
        
                 console.log("Round 1 - Ascii Sum 2812");
 
-                if (Asserter(asciiSum(flag), 2812, 1)) {
-                    return false;
-                }
+                // if (Asserter(asciiSum(flag), 2812, 1)) {
+                //     return false;
+                // }
 
                 console.log("Round 2 - Længde 32");
 
-                if (Asserter(getLength(flag), 32, 1)) {
+                if (Asserter(flag.length, 32, 1)) {
                     return false;
                 }
 
                 console.log("Round 3 - ???");
-                
+
                 if (Asserter(everyCharAt(btoa(reductionExtreme(prependCharCodeOf0(substringerDelux(flag, 8, 0)), '8hadcq4GFMfa')), splitItReverseItJoinIt('VgtSHwxBXBhG')), false, 0)) { 
                     return false
                 };
-
+                
                 console.log("Round 4 - ???");
                 
-                if (!Asserter(replaceAllStringFromCharCode0(reductionExtreme(atob('X0FuRnRcDgtv'), '2812DlQfoUaemEe')), substringerDelux(flag, 8, 1), 0)) {
+                if (!Asserter(replaceAllStringFromCharCode0(reductionExtreme(atob('X0FuRnRcDgtv'), 'QfoUaemEe')), substringerDelux(flag, 8, 1), 0)) {
                     return false;
                 }
 
@@ -279,7 +282,7 @@
             let OO0000OOOOo0O0OOO0Oo0Oooo000o0O0 = OoOo00o0OoO0O0oo0OoO00Ooo00o000O.target
             let oO0O0Oooooo0OoO000OO0O0o0O000000 = OO0000OOOOo0O0OOO0Oo0Oooo000o0O0.querySelector("input")
             let oOooO0oOo00000OoOOOoO0o0oOoOoOo0 = oO0O0Oooooo0OoO000OO0O0o0O000000.value
-            if(checkflag('nc3{flag_flag_flag_flag_flag_fl}')) {
+            if(checkflag('nc3{o0h_my_t00_m4ny_00OoO0oo0o!}')) {
                 console.log("Yup, korrekt.")
             } else {
                 console.log("Ups, prv igen.")
