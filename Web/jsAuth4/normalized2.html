@@ -17,16 +17,12 @@
                 (function() {
         let Oo0OOOoO00oooOOOOo0o00Oo0oOooo0o=['OO00O0o0O0ooo0o0000ooo0oOO0O0000','ooO0O0oOOoO0oo0O00OOo0oOOOO0oo0O']
         
-        let _parseInt = input => {
-            return parseInt (functionMapper(input))
-        };
-        
         let replaceAllStringFromCharCode0 = input => {
-            return input.replaceAll(stringFromCharCode(0), '');
+            return input.replaceAll(String.fromCharCode(0), '');
         };
 
         let charCodeAt0CharAtExtreme = (input1, input2) => {
-            return charCodeAt0(input1.charAt(input2 % getLength(input1)));
+            return charCodeAt0(input1.charAt(input2 % input1.length));
         }
         
         let Asserter = (p1, p2, p3) => {
@@ -34,15 +30,11 @@
         };
         
         let substringerDelux = (flag, value1, value2) => {
-            return substringer(flag, value1 * value2, value1 * value2 + value1);
+            return flag.substring(value1 * value2, value1 * value2 + value1);
         }
         
         let stringFromCharCodeConjunction = (input1, input2) => {
-            return stringFromCharCode(input1 ^ input2);
-        }
-        
-        let substringer = (flag, value1, value2) => {
-            return flag.substring(value1, value2)
+            return String.fromCharCode(input1 ^ input2);
         }
         
         let charCodeAt0 = input => {
@@ -51,19 +43,19 @@
         
         let arrayOf62Magic = () => {
             return [...Array(62).keys()].map((value1, value2) => {
-                return stringFromCharCode(value1 + (value2 < 10 ? 48 : (value2 < 36) ? 55 : 61));
+                return String.fromCharCode(value1 + (value2 < 10 ? 48 : (value2 < 36) ? 55 : 61));
             });
         }
 
         let reduceWithIndexOfExtreme = (input1, input2) => {
             return [...input1].reduce((value1, value2) => {
-                return value1 + ((var1 = input2.indexOf(value2)) > - 1 ? input2[(var1 + getLength(input2) / 2) % getLength(input2)] : value2), '';
+                return value1 + ((var1 = input2.indexOf(value2)) > - 1 ? input2[(var1 + input2.length / 2) % input2.length] : value2), '';
             });
         }
         
         let everyCharAt = (input1, input2) => {
             return [...input1].every((value1, value2) => {
-                return value1 == input2.charAt(getLength(input1) - value2 - 1);
+                return value1 == input2.charAt(input1.length - value2 - 1);
             });
         }
         
@@ -72,38 +64,23 @@
                 value1 + stringFromCharCodeConjunction(charCodeAt0(value2), charCodeAt0CharAtExtreme(input2, value3)), ''
             });
         }
-        
-        let stringFromCharCode = charCode => {
-            return String.fromCharCode(charCode);
-        }
 
-        let getLength = input => {
-            return input.length;
-        };
-        
         let splitter = (input1, input2) => {
             return input1.split(input2);
         }
 
-        let lookupTable = input => { 
-            return oOoOO0o0ooOooo0ooO0O00oooOoOO0OO[input];
-        }
-        
         let prependCharCodeOf0 = input => { 
-            return input + stringFromCharCode(0);
+            return input + String.fromCharCode(0);
         }
         
         let splitItReverseItJoinIt = input => {
             return splitter(input, '').reverse().join('');
         }
-
-
-        let functionMapper = input => {
-            return splitter(atob(lookupTable(input)), '0oO0') [21 & 11];
-        };
         
-        let asciiSum = OoOo0OOOOooooO0ooooOOO0OoOO00ooo => {
-            return [...OoOo0OOOOooooO0ooooOOO0OoOO00ooo][functionMapper('OO000o00O0O000oOOOo0O00ooOOo000o')]( (O000OoO00o00O0O00oOO000OOoooOoO0, O000OO0ooO0o0oOOOOO00ooO0o0O0ooo) => O000OoO00o00O0O00oOO000OOoooOoO0 + charCodeAt0(O000OO0ooO0o0oOOOOO00ooO0o0O0ooo), _parseInt('Oo0oO0OOoO0OO0OoOOo0oOo0oO00OOoo'));
+        let asciiSum = input => {
+            return [...input].reduce( (value1, value2) => {
+                return value1 + charCodeAt0(value2), 0;
+            });
         };
         
         let oOOOooOOoO0O00oO0o00O00ooOo00oOo = {
