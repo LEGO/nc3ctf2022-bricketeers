@@ -82,8 +82,8 @@ let splitItReverseItJoinIt = input => {
         
         let asciiSum = input => {
             return [...input].reduce( (value1, value2) => {
-                return value1 + charCodeAt0(value2), 0;
-            });
+                return value1 + charCodeAt0(value2);
+            }, 0);
         };
         
         let oOOOooOOoO0O00oO0o00O00ooOo00oOo = {
@@ -239,9 +239,9 @@ let splitItReverseItJoinIt = input => {
        
                 console.log("Round 1 - Ascii Sum 2812");
 
-                // if (Asserter(asciiSum(flag), 2812, 1)) {
-                //     return false;
-                // }
+                if (Asserter(asciiSum(flag), 2812, 1)) {
+                    return false;
+                }
 
                 console.log("Round 2 - Længde 32");
 
