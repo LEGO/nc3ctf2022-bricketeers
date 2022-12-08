@@ -59,6 +59,7 @@ Collaboration and solution repo for the NC3 CTF - 2022.
 ### Bonus
 
 * [Juledonation](/bonus/juledonation.md)
+* [Kryptonissen vs Drillenissen](/bonus/KryptonissenVsDrillenissen/README.md)
 
 ### Reversing
 
