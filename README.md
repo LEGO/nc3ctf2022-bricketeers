@@ -33,7 +33,19 @@
     |_|  |_| |_|\___| |____/  |____/|_|  |_|\___|_|\_\___|\__\___|\___|_|  |___/
 ```
 
-Collaboration and solution repo for the NC3 CTF - 2022.
+_Collaboration and solution repo for the NC3 CTF - 2022._
+
+## What even is this?!
+
+This repository holds the write-ups for a bunch of tasks some of us did, during the annual christmas [ctf](https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)), hosted by the Danish Center for Cyber Crime (NC3).
+
+Every year, the cyber crime division of the Danish police, hosts this competition, purely for fun.  
+We always have a few teams competing, the three Bricketeers is one of them.
+
+### Why though?
+
+Security is a huge part of building software these days. It is at the core of everything, no matter if you're making internal software or public facing software.  
+For us, competing in this is a fun way to improve our skills a bit and a great christmas tradition.
 
 ## Table of content
 
