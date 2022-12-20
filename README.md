@@ -52,8 +52,8 @@ For us, competing in this is a fun way to improve our skills a bit and a great c
 The team consists of three software engineers.
 
 [Morten Bøgh](https://github.com/mbogh)  
-[Alex Wichmann](https://github.com/visualbean)  
 [Nicolai Søndergaard](https://github.com/nicoolai)  
+[Alex Wichmann](https://github.com/visualbean)
 
 ## Table of content
 
