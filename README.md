@@ -47,6 +47,14 @@ We always have a few teams competing, the three Bricketeers is one of them.
 Security is a huge part of building software these days. It is at the core of everything, no matter if you're making internal software or public facing software.  
 For us, competing in this is a fun way to improve our skills a bit and a great christmas tradition.
 
+### Who is the Three Bricketeers?
+
+The team consists of three software engineers.
+
+[Morten Bøgh](https://github.com/mbogh)  
+[Alex Wichmann](https://github.com/visualbean)  
+[Nicolai Søndergaard](https://github.com/nicoolai)  
+
 ## Table of content
 
 ### Web
