@@ -85,3 +85,12 @@ The team consists of three software engineers.
 
 * [To be xor not to be?](/reversing/ToBeXorNotToBe/README.md)
 * [Banke på](/reversing/banke-paa/README.md)
+
+## How did the competition end?
+
+More than 400 teams signed up.  
+3 teams solved all tasks. Congratulations to those, quite an achievement.
+
+We finished 9th, or on a shared (based on points) 6th position.
+
+![Scoreboard showing the three bricketeers on position 9](position.png)
